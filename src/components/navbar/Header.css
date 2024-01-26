@@ -1,5 +1,9 @@
+header {
+  background-color: white;
+}
+
 .nav {
-  padding: 1.5rem 0;
+  padding: 1.35rem 0;
 }
 
 .logo {
