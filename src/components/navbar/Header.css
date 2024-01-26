@@ -2,6 +2,20 @@
   padding: 1.5rem 0;
 }
 
+.logo {
+  cursor: pointer;
+}
+.logo img {
+  width: 3.3rem;
+  height: auto;
+  margin-right: 1rem;
+}
+.logo h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #12788f;
+}
+
 .nav ul li {
   list-style: none;
   margin-right: 1.6rem;

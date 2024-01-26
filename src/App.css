@@ -49,15 +49,3 @@ html {
 .wf-100 {
   width: 100%;
 }
-
-/* Logo */
-.logo img {
-  width: 3.3rem;
-  height: auto;
-  margin-right: 1rem;
-}
-.logo h3 {
-  font-size: 1.15rem;
-  font-weight: 500;
-  color: #12788f;
-}
