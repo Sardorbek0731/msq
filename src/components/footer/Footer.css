@@ -10,10 +10,11 @@
 }
 
 .footerLogo {
+  width: 5rem;
   margin-bottom: 1.8rem;
 }
 .footerLogo img {
-  width: 5rem;
+  width: 100%;
   height: auto;
 }
 

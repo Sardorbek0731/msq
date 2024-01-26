@@ -3,7 +3,7 @@
 }
 
 .logo {
-  cursor: pointer;
+  text-decoration: none;
 }
 .logo img {
   width: 3.3rem;

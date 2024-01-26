@@ -11,10 +11,10 @@ function Header() {
     <header>
       <div className="container">
         <nav className="nav flex alignCenter justifyBetween">
-          <div className="logo flex alignCenter">
+          <a href="#" className="logo flex alignCenter">
             <img src={logo} alt="Logo" />
             <h3>Muhammad Savdo Qurilish MCHJ</h3>
-          </div>
+          </a>
 
           <ul className="flex alignCenter">
             <li>
@@ -31,7 +31,7 @@ function Header() {
           </ul>
 
           <a className="number" href="tel: +998941173949">
-            94 117 3949
+            +998 94 117 3949
           </a>
         </nav>
       </div>

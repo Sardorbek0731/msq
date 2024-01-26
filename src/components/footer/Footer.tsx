@@ -9,16 +9,16 @@ function Footer() {
     <footer className="footer flex">
       <div className="container wf-100">
         <div className="footerInfos flex column">
-          <div className="logo footerLogo">
+          <a href="#" className="logo footerLogo">
             <img src={logo} alt="Logo" />
-          </div>
+          </a>
 
           <div className="address">
             <h3>Urganch shahar, Xonqa tumani, Yangi shahar ko'chasi, 64A uy</h3>
           </div>
 
           <a className="footerNumber" href="tel: +998941173949">
-            94 117 3949
+            +998 94 117 3949
           </a>
 
           <a
