@@ -71,10 +71,11 @@ function Footer() {
       </div>
       <div className="footerMap">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47772.47013810481!2d60.581874040592865!3d41.55237379724618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfc9284eafb523%3A0xffaf4382f65d7b61!2sUrganch%2C%20Xorazm%20Viloyati%2C%20O%60zbekiston!5e0!3m2!1suz!2s!4v1706293206160!5m2!1suz!2s"
-          allowfullscreen=""
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.72993490486675!2d60.659717292683126!3d41.52679541189042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1706339418604!5m2!1sen!2s"
+          width="600"
+          height="450"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </footer>
