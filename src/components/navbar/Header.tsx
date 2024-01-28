@@ -23,11 +23,11 @@ function Header({ clickLang, setClickLang }) {
 
           <ul className="flex alignCenter">
             <li>
-              <a href="#projects">Loyihalar</a>
+              <a href="#about">Biz haqimizda</a>
             </li>
 
             <li>
-              <a href="#about">Biz haqimizda</a>
+              <a href="#projects">Loyihalar</a>
             </li>
 
             <li>

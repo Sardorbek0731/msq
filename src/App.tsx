@@ -17,8 +17,8 @@ function App() {
     <>
       <Header clickLang={clickLang} setClickLang={setClickLang} />
       <Home setClickLang={setClickLang} />
-      <Projects setClickLang={setClickLang} />
       <About setClickLang={setClickLang} />
+      <Projects setClickLang={setClickLang} />
       <Footer setClickLang={setClickLang} />
     </>
   );

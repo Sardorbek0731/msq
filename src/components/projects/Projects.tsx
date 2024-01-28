@@ -9,9 +9,11 @@ function Projects({ setClickLang }) {
         setClickLang(false);
       }}
     >
-      <div className="container">
+      <div className="container flex column">
         <div className="title">
-          <h1>Loyihalar</h1>
+          <h1>
+            <span className="firstLetter">L</span>oyihalar ...
+          </h1>
         </div>
       </div>
     </section>
