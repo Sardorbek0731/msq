@@ -114,13 +114,8 @@ html {
   border: none;
 }
 
-.aboutUs_text {
-  padding: 0.75rem 3rem 1rem 0;
-  justify-content: space-between;
-}
-
 .aboutUs_img img {
-  width: 32rem;
+  width: 36rem;
   height: auto;
   object-fit: contain;
 }

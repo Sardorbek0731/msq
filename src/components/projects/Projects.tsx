@@ -35,12 +35,12 @@ function Projects({ setClickLang }) {
                 <img src={project3} alt="Project Images" />
               </div>
               <div className="row wf-100 flex justifyBetween">
-                <img src={project4} alt="Project Images" />
                 <img src={project5} alt="Project Images" />
+                <img src={project4} alt="Project Images" />
               </div>
               <div className="row wf-100 flex justifyBetween">
-                <img src={project6} alt="Project Images" />
                 <img src={project7} alt="Project Images" />
+                <img src={project6} alt="Project Images" />
               </div>
             </div>
           </div>
