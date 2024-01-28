@@ -4,9 +4,15 @@ import "./Footer.css";
 // Images
 import logo from "../../assets/images/light-logo.png";
 
-function Footer() {
+function Footer({ setClickLang }) {
   return (
-    <footer className="footer flex" id="contact">
+    <footer
+      className="footer flex"
+      id="contact"
+      onClick={() => {
+        setClickLang(false);
+      }}
+    >
       <div className="footerInfos flex column wf-50">
         <a href="#" className="logo footerLogo">
           <img src={logo} alt="Logo" />

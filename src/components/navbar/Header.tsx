@@ -7,8 +7,7 @@ import logo from "../../assets/images/logo.png";
 // Hooks
 import { useState } from "react";
 
-function Header() {
-  const [clickLang, setClickLang] = useState(false);
+function Header({ clickLang, setClickLang }) {
   const [langValue, setLangValue] = useState("O'zbek");
 
   //   let navbarLists = ["Loyihalar", "Biz haqimizda", "Kontakt"];
@@ -83,18 +82,6 @@ function Header() {
                   }}
                 >
                   O'zbek
-                </div>
-                <div
-                  className={
-                    langValue == "English"
-                      ? "language_item activeLang"
-                      : "language_item"
-                  }
-                  onClick={() => {
-                    setLangValue("English");
-                  }}
-                >
-                  English
                 </div>
                 <div
                   className={

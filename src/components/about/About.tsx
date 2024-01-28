@@ -1,8 +1,14 @@
 import "./About.css";
 
-function About() {
+function About({ setClickLang }) {
   return (
-    <section className="about" id="about">
+    <section
+      className="about"
+      id="about"
+      onClick={() => {
+        setClickLang(false);
+      }}
+    >
       <div className="container">
         <div className="title">
           <h1>Biz haqimizda</h1>

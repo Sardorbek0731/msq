@@ -1,8 +1,14 @@
 import "./Projects.css";
 
-function Projects() {
+function Projects({ setClickLang }) {
   return (
-    <section className="projects" id="projects">
+    <section
+      className="projects"
+      id="projects"
+      onClick={() => {
+        setClickLang(false);
+      }}
+    >
       <div className="container">
         <div className="title">
           <h1>Loyihalar</h1>

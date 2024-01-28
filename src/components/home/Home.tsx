@@ -1,9 +1,14 @@
 // CSS
 import "./Home.css";
 
-function Home() {
+function Home({ setClickLang }) {
   return (
-    <section className="home">
+    <section
+      className="home"
+      onClick={() => {
+        setClickLang(false);
+      }}
+    >
       <div className="container">
         <h1>Home</h1>
       </div>
