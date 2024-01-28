@@ -3,8 +3,11 @@ import "./Footer.css";
 
 // Images
 import logo from "../../assets/images/light-logo.png";
+import { useTranslation } from "react-i18next";
 
 function Footer({ setClickLang }) {
+  const { t } = useTranslation();
+
   return (
     <footer
       className="footer flex"
@@ -18,7 +21,7 @@ function Footer({ setClickLang }) {
           <img src={logo} alt="Logo" />
         </a>
         <div className="address">
-          <h3>Urganch shahar, Sanoatchilar ko'chasi, 1-yo'lak, 1A uy</h3>
+          <h3>{t("footer.address")}</h3>
         </div>
         <a className="footerNumber" href="tel: +998973603033">
           +998 97 360 3033

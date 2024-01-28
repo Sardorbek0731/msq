@@ -6,10 +6,11 @@ import logo from "../../assets/images/logo.png";
 
 // Hooks
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Header({ clickLang, setClickLang }) {
   const [langValue, setLangValue] = useState<string>("O'zbek");
-
+  const { t, i18n } = useTranslation();
   //   let navbarLists = ["Loyihalar", "Biz haqimizda", "Kontakt"];
 
   return (
@@ -23,15 +24,15 @@ function Header({ clickLang, setClickLang }) {
 
           <ul className="flex alignCenter">
             <li>
-              <a href="#projects">Loyihalar</a>
+              <a href="#projects">{t("navbar.projects")}</a>
             </li>
 
             <li>
-              <a href="#about">Biz haqimizda</a>
+              <a href="#about">{t("navbar.about")}</a>
             </li>
 
             <li>
-              <a href="#contact">Kontakt</a>
+              <a href="#contact">{t("navbar.contact")}</a>
             </li>
           </ul>
 
@@ -79,6 +80,7 @@ function Header({ clickLang, setClickLang }) {
                   }
                   onClick={() => {
                     setLangValue("O'zbek");
+                    i18n.changeLanguage("uz");
                   }}
                 >
                   O'zbek
@@ -91,6 +93,7 @@ function Header({ clickLang, setClickLang }) {
                   }
                   onClick={() => {
                     setLangValue("Русский");
+                    i18n.changeLanguage("ru");
                   }}
                 >
                   Русский
