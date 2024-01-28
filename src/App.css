@@ -49,3 +49,125 @@ html {
 .wf-100 {
   width: 100%;
 }
+.wf-50 {
+  width: 50%;
+}
+
+/* Sections */
+.projects,
+.about {
+  padding-top: 8rem;
+}
+
+.title {
+  margin-bottom: 5rem;
+}
+.title h1 {
+  font-size: 2.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+.footerInfos {
+  padding: 3.5rem 3.5rem 3.5rem 8rem;
+}
+
+.footerMap iframe {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  border: none;
+}
+
+/* Media */
+@media only screen and (max-width: 1360px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 11.5px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 10.75px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    padding: 0 4rem;
+  }
+  .footerInfos {
+    padding: 2.7rem 2.7rem 2.7rem 4rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .logo h3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerMap iframe {
+    position: static;
+    width: 100%;
+    height: 26rem;
+  }
+  .footerMap,
+  .footerInfos {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 3rem;
+  }
+  .footerInfos {
+    padding: 2.3rem 2.3rem 2.7rem 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .number {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1750px) {
+  html {
+    font-size: 18.5px;
+  }
+}
+@media only screen and (min-width: 1830px) {
+  html {
+    font-size: 19.3px;
+  }
+}
+@media only screen and (min-width: 1950px) {
+  html {
+    font-size: 21px;
+  }
+}

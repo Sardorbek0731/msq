@@ -1,12 +1,6 @@
 .footer {
   background-color: #12788f;
-  padding: 3.5rem 0;
   position: relative;
-}
-
-.footerInfos {
-  width: 50%;
-  padding-right: 4rem;
 }
 
 .footerLogo {
@@ -25,42 +19,13 @@
   font-weight: 400;
 }
 
-.footerNumber,
-.gmail {
+.footerNumber {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.15rem;
   margin-bottom: 0.4rem;
 }
-
-.gmail {
-  font-size: 1.1rem;
-  margin-bottom: 1.8rem;
+.footerNumber:last-child {
+  margin-bottom: 0;
 }
 
-.links a {
-  text-decoration: none;
-  margin-right: 0.8rem;
-}
-.links a:last-child {
-  margin-right: 0;
-}
-
-.links a svg {
-  color: white;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.footerMap {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-}
-.footerMap iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
