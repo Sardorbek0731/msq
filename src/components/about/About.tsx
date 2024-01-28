@@ -22,7 +22,7 @@ function About({ setClickLang }) {
         </div>
         <div className="aboutInfos flex justifyBetween">
           <div className="aboutUs_text flex column">
-            <div href="#" className="logo aboutLogo flex alignCenter">
+            <div className="logo aboutLogo flex alignCenter">
               <h3>Muhammad Savdo Qurilish MCHJ</h3>
             </div>
             <div className="director flex justifyBetween">
