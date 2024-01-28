@@ -39,10 +39,7 @@ function About({ setClickLang }) {
               recusandae, impedit quidem dolorem? Commodi fugit blanditiis
               facilis
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              possimus dolor pariatur facilis culpa voluptates.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="aboutUs_img flex">
             <img src={aboutImg} alt="About us image" />

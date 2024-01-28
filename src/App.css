@@ -57,11 +57,14 @@ html {
 /* Sections */
 .projects,
 .about {
-  padding-top: 5rem;
+  padding-top: 3rem;
+}
+.projects {
+  padding-bottom: 5rem;
 }
 
 .title {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .title h1 {
   font-size: 2.1rem;
@@ -111,6 +114,41 @@ html {
   border: none;
 }
 
+.aboutUs_text {
+  padding: 0.75rem 3rem 1rem 0;
+  justify-content: space-between;
+}
+
+.aboutUs_img img {
+  width: 32rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.aboutUs_text p {
+  font-size: 1.02rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.columnImgs {
+  width: 58%;
+}
+
+.firstProject {
+  width: 40%;
+  height: auto;
+}
+
+.row {
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+}
+
+.columnImgs img {
+  width: 48.5%;
+  object-fit: contain;
+}
+
 /* Media */
 @media only screen and (max-width: 1360px) {
   html {
@@ -150,10 +188,34 @@ html {
   .footerInfos {
     padding: 2.7rem 2.7rem 2.7rem 4rem;
   }
+  .aboutUs_text p {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 640px) {
   .logo h3 {
     display: none;
+  }
+  .aboutInfos {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutUs_text {
+    padding: 0;
+  }
+  .aboutUs_img img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .columnImgs {
+    width: 100%;
+  }
+  .rowMain {
+    flex-direction: column;
+  }
+  .firstProject {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 525px) {
@@ -176,6 +238,9 @@ html {
   .footerInfos {
     padding: 2.3rem 2.3rem 2.7rem 3rem;
   }
+  .logo img {
+    width: 3.2rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   .number {
@@ -185,7 +250,20 @@ html {
     padding: 0.4rem 1.8rem 0.4rem 0.6rem;
   }
   .language_btn {
-    padding: 0 0.8rem;
+    padding: 0 0.6rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .columnImgs img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .row:last-child img:last-child {
+    margin-bottom: 0;
   }
 }
 
