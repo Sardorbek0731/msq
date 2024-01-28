@@ -12,7 +12,7 @@ import Footer from "./components/footer/Footer";
 import { useState } from "react";
 
 function App() {
-  const [clickLang, setClickLang] = useState(false);
+  const [clickLang, setClickLang] = useState<boolean>(false);
   return (
     <>
       <Header clickLang={clickLang} setClickLang={setClickLang} />

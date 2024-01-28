@@ -8,7 +8,7 @@ import logo from "../../assets/images/logo.png";
 import { useState } from "react";
 
 function Header({ clickLang, setClickLang }) {
-  const [langValue, setLangValue] = useState("O'zbek");
+  const [langValue, setLangValue] = useState<string>("O'zbek");
 
   //   let navbarLists = ["Loyihalar", "Biz haqimizda", "Kontakt"];
 
