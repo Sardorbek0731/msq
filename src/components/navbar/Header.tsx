@@ -24,13 +24,11 @@ function Header({ clickLang, setClickLang }) {
 
           <ul className="flex alignCenter">
             <li>
-              <a href="#projects">{t("navbar.projects")}</a>
-            </li>
-
-            <li>
               <a href="#about">{t("navbar.about")}</a>
             </li>
-
+            <li>
+              <a href="#projects">{t("navbar.projects")}</a>
+            </li>
             <li>
               <a href="#contact">{t("navbar.contact")}</a>
             </li>
