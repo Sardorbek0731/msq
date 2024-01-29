@@ -9,18 +9,17 @@
   margin-bottom: 1.5rem;
 }
 .birthday {
-  margin-top: 0.4rem;
+  margin: 0.4rem 0;
 }
-.director h3,
-.birthday h3 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-family: "Signika", sans-serif;
+.finishedProject {
+  margin-bottom: 0.4rem;
 }
+.finishedProject h3:first-child,
+.addressAbout h3:first-child,
 .director h3:first-child,
 .birthday h3:first-child {
   color: rgba(0, 0, 0, 0.7);
 }
-.birthday h3:first-child {
-  margin-right: 10rem;
+.addressAbout h3:first-child {
+  margin-right: 5rem;
 }

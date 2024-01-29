@@ -26,20 +26,41 @@ function Projects({ setClickLang }) {
           </h1>
         </div>
         <div className="rowMain flex justifyBetween">
-          <img src={project1} className="firstProject" alt="Project Images" />
+          <div className="firstProject">
+            <img src={project1} alt="Project Images" />
+            <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi.</h2>
+          </div>
 
           <div className="columnImgs flex column justifyBetween">
             <div className="row wf-100 flex justifyBetween">
-              <img src={project2} alt="Project Images" />
-              <img src={project3} alt="Project Images" />
+              <div className="projectImg wf-100">
+                <img src={project2} alt="Project Images" />
+                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi.</h2>
+              </div>
+              <div className="projectImg wf-100">
+                <img src={project3} alt="Project Images" />
+                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
+              </div>
             </div>
             <div className="row wf-100 flex justifyBetween">
-              <img src={project5} alt="Project Images" />
-              <img src={project4} alt="Project Images" />
+              <div className="projectImg">
+                <img src={project5} alt="Project Images" />
+                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
+              </div>
+              <div className="projectImg">
+                <img src={project4} alt="Project Images" />
+                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
+              </div>
             </div>
             <div className="row wf-100 flex justifyBetween">
-              <img src={project7} alt="Project Images" />
-              <img src={project6} alt="Project Images" />
+              <div className="projectImg">
+                <img src={project7} alt="Project Images" />
+                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
+              </div>
+              <div className="projectImg">
+                <img src={project6} alt="Project Images" />
+                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi.</h2>
+              </div>
             </div>
           </div>
         </div>

@@ -34,6 +34,18 @@ function About({ setClickLang }) {
               <h3>Tashkil topgan sana:</h3>
               <h3>2014-yil 6-dekabr</h3>
             </div>
+            <div className="finishedProject flex justifyBetween">
+              <h3>Tugatilgan obyektlar soni:</h3>
+              <h3>100 dan ortiq</h3>
+            </div>
+            <div className="finishedProject flex justifyBetween">
+              <h3>Sohada tajriba:</h3>
+              <h3>10 yil</h3>
+            </div>
+            <div className="addressAbout flex justifyBetween">
+              <h3>Manzil:</h3>
+              <h3>Urganch shahar, Sanoatchilar ko'chasi, 1-yo'lak, 1A uy</h3>
+            </div>
           </div>
           <div className="aboutUs_img flex">
             <img src={aboutImg} alt="About us image" />
