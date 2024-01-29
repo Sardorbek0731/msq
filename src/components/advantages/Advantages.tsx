@@ -1,22 +1,23 @@
 import "./Advantages.css";
+import { AttachMoney, ThumbUpAlt, Timer } from "@mui/icons-material";
 
 const Advantages = () => {
   const advantage = [
     {
-      icon: "43",
+      icon: <ThumbUpAlt className="Icon" />,
       title: "Yuqori sifat",
       description: `Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua
 enim`,
     },
     {
-      icon: "434",
-      title: "Tezkor xizmat ko'rsatish",
+      icon: <AttachMoney className="Icon" />,
+      title: "Qulay narx",
       description: `Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua
 enim`,
     },
     {
-      icon: "545",
-      title: "Yangicha dizaynlar",
+      icon: <Timer className="Icon" />,
+      title: "Yuqori tezlik",
       description: `Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua
 enim`,
     },
@@ -24,7 +25,7 @@ enim`,
 
   return (
     <div>
-      <h1>
+      <h1 className="title">
         <span className="firstLetter">A</span>fzalliklarimiz
       </h1>
       <div className="OurAdvantagesRow">

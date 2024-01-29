@@ -53,44 +53,6 @@
   padding-left: 140px;
 }
 
-.CounterWrap {
-  display: flex;
-  padding: 30px 140px;
-  background: linear-gradient(
-    110deg,
-    rgb(82, 252, 238) 33.33%,
-    rgb(82, 253, 230) 33.33%,
-    rgb(69, 196, 255) 66.66%,
-    rgb(98, 179, 245) 66.66%
-  );
-  background-size: cover;
-  height: 240px;
-  margin-bottom: 80px;
-  position: relative;
-}
-
-.Counter {
-  width: 33%;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
-.Counter h1 {
-  text-align: center;
-  font-size: 72px;
-  margin-bottom: 0;
-}
-
-.Counter h2 {
-  font-size: 32px;
-}
-
 .AboutImage {
   width: 100%;
 }
@@ -155,6 +117,7 @@
 
 .Icon {
   color: #4bdff3;
+  background-color: #4bdff3;
   font-size: 80px !important;
   line-height: 1;
   transition: all 0.5s ease-in-out;
@@ -243,47 +206,14 @@
     padding-top: 0px;
     height: 37vh;
   }
-  .HeaderTitle {
-    font-size: 112px !important;
-    font-family: "Benne", serif !important;
-  }
-  .HeaderText {
-    font-size: 18px !important;
-    width: 90%;
-  }
-  .AboutText {
-    font-size: 16px;
-    text-align: justify;
-  }
   .OurAdvantagesRow {
     flex-direction: column;
   }
   .IconBox {
     padding: 25px 30px;
-    width: 80%;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 30px;
-  }
-  .CounterWrap {
-    display: flex;
-    padding: 30px 0;
-    height: 140px;
-  }
-  .Counter {
-    width: 26%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .Counter:last-child {
-    width: 48%;
-  }
-  .Counter h1 {
-    font-size: 32px;
-  }
-  .Counter h2 {
-    font-size: 16px;
   }
   .Author p {
     margin: 0;
