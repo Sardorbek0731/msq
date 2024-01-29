@@ -1,0 +1,300 @@
+.LandingContainer {
+  margin-top: 60px;
+}
+
+.HeaderWrap {
+  padding-left: 140px;
+  padding-top: 220px;
+  height: 64.5vh;
+  background: url("../../assets/img/humo-teksPNG.png") no-repeat;
+  background-size: contain;
+}
+
+.LandingInside {
+  padding: 50px 140px;
+  padding-bottom: 0px;
+  padding-top: 80px;
+  background-color: #151be0;
+}
+
+.HeaderTitle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 112px !important;
+  font-family: "Playfair Display", serif !important;
+  -webkit-text-stroke: 1px #400ccc;
+  -webkit-text-fill-color: white;
+}
+
+.HeaderText {
+  color: #fff;
+  width: 45%;
+}
+
+.AboutSectionContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.MuiSvgIcon-root {
+  fill: #fff !important;
+}
+
+.MuiListItemIcon-root {
+  padding: 0;
+}
+
+.MuiGrid-container {
+  padding-left: 140px;
+}
+
+.MuiCollapse-wrapper {
+  padding-left: 140px;
+}
+
+.CounterWrap {
+  display: flex;
+  padding: 30px 140px;
+  background: linear-gradient(
+    110deg,
+    rgb(82, 252, 238) 33.33%,
+    rgb(82, 253, 230) 33.33%,
+    rgb(69, 196, 255) 66.66%,
+    rgb(98, 179, 245) 66.66%
+  );
+  background-size: cover;
+  height: 240px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.Counter {
+  width: 33%;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.Counter h1 {
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 0;
+}
+
+.Counter h2 {
+  font-size: 32px;
+}
+
+.AboutImage {
+  width: 100%;
+}
+
+.AboutText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #033568;
+  padding-right: 10px;
+  margin-top: 0;
+}
+
+.SliderProducts {
+  padding-bottom: 60px;
+}
+
+.ProductInfo {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.IconBox {
+  padding: 25px 30px;
+  width: 30%;
+  margin-left: 40px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.IconBox:first-child {
+  margin-left: 0;
+}
+
+.IconBox::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.IconBox:hover::before {
+  background: #4bdff3;
+  top: 0;
+  border-radius: 0px;
+}
+
+.IconWrap {
+  margin-bottom: 15px;
+}
+
+.Icon {
+  color: #4bdff3;
+  font-size: 80px !important;
+  line-height: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #162680;
+  margin-top: 0;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #162680;
+}
+
+.IconBox:hover .title,
+.IconBox:hover .description {
+  color: #fff;
+}
+
+.IconBox:hover .Icon {
+  color: #fff;
+}
+
+.OurAdvantagesRow {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.ProductDescription {
+  position: absolute;
+  bottom: 60px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ProductItemWrap {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductInfo p {
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1680px) {
+  .AboutSectionContainer,
+  .OurAdvantagesContainer,
+  .CounterWrap,
+  .SliderProducts {
+    max-width: 1680px !important;
+  }
+  .HeaderWrap {
+    height: 67.2vh;
+  }
+  .LandingInside {
+    padding: 50px 120px;
+    padding-bottom: 0px;
+    padding-top: 140px;
+  }
+  .IconBox {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .LandingContainer {
+    margin-top: 50px;
+  }
+  .LandingInside {
+    padding: 0;
+    padding-top: 60px;
+  }
+  .HeaderWrap {
+    padding-left: 20px;
+    padding-top: 0px;
+    height: 37vh;
+  }
+  .HeaderTitle {
+    font-size: 112px !important;
+    font-family: "Benne", serif !important;
+  }
+  .HeaderText {
+    font-size: 18px !important;
+    width: 90%;
+  }
+  .AboutText {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .OurAdvantagesRow {
+    flex-direction: column;
+  }
+  .IconBox {
+    padding: 25px 30px;
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .CounterWrap {
+    display: flex;
+    padding: 30px 0;
+    height: 140px;
+  }
+  .Counter {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Counter:last-child {
+    width: 48%;
+  }
+  .Counter h1 {
+    font-size: 32px;
+  }
+  .Counter h2 {
+    font-size: 16px;
+  }
+  .Author p {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+.Checkmark {
+  color: green;
+}
+
+.Cancel {
+  color: red;
+}

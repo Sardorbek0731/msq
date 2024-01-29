@@ -3,6 +3,7 @@ import "./About.css";
 
 // Images
 import aboutImg from "../../assets/images/about.jpg";
+import Advantages from "../advantages/Advantages";
 
 function About({ setClickLang }) {
   return (
@@ -48,6 +49,9 @@ function About({ setClickLang }) {
             <img src={aboutImg} alt="About us image" />
           </div>
         </div>
+      </div>
+      <div className="container" style={{ marginTop: 80 }}>
+        <Advantages />
       </div>
     </section>
   );
