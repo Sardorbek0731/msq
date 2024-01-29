@@ -63,19 +63,22 @@ html {
   padding-bottom: 5rem;
 }
 
-.title {
+/* Title */
+.sectionTitle {
   margin-bottom: 3rem;
 }
-.title h1 {
+.sectionTitle h1 {
   font-size: 2.1rem;
   font-weight: 400;
   font-family: "Signika", sans-serif;
+  color: black;
 }
 .firstLetter {
   color: #12788f;
   font-size: 2.9rem;
 }
 
+/* Language */
 .language_btn {
   position: relative;
   background-color: rgba(0, 0, 0, 0.03);
@@ -86,7 +89,6 @@ html {
   padding: 0 0.9rem;
   border: 2px solid transparent;
 }
-
 .language_item {
   display: flex;
   align-items: center;
@@ -100,20 +102,7 @@ html {
   border: 2px solid transparent;
 }
 
-.footerInfos {
-  padding: 3.5rem 3.5rem 3.5rem 8rem;
-}
-
-.footerMap iframe {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  border: none;
-}
-
+/* About */
 .aboutUs_img img {
   width: 36rem;
   height: auto;
@@ -125,39 +114,53 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+/* Projects */
 .columnImgs {
-  width: 58%;
+  height: auto;
+  width: 55%;
+}
+.row {
+  height: 30%;
 }
 
 .firstProject {
-  width: 40%;
+  width: 42%;
+  height: auto;
+}
+.columnImgs img {
+  width: 48%;
+  object-fit: cover;
   height: auto;
 }
 
-.row {
-  align-items: flex-start;
-  margin-bottom: 1.6rem;
+/* Footer */
+.footerInfos {
+  padding: 3.5rem 3.5rem 3.5rem 8rem;
 }
-
-.columnImgs img {
-  width: 48.5%;
-  object-fit: contain;
+.footerMap iframe {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  border: none;
 }
 
 /* Media */
 @media only screen and (max-width: 1360px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 1240px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 980px) {
   html {
-    font-size: 11.5px;
+    font-size: 11px;
   }
   .logo h3 {
     display: none;
@@ -166,11 +169,6 @@ html {
 @media only screen and (max-width: 960px) {
   html {
     font-size: 11.5px;
-  }
-}
-@media only screen and (max-width: 850px) {
-  html {
-    font-size: 10.75px;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -202,8 +200,19 @@ html {
     width: 100%;
     margin-bottom: 3rem;
   }
+
+  .row {
+    margin-bottom: 2rem;
+    height: 18rem;
+  }
+  .row:last-child {
+    margin-bottom: 0;
+  }
   .columnImgs {
     width: 100%;
+  }
+  .columnImgs img {
+    object-fit: cover;
   }
   .rowMain {
     flex-direction: column;
@@ -247,11 +256,15 @@ html {
   .language_btn {
     padding: 0 0.6rem;
   }
+  .row {
+    height: 14rem;
+  }
 }
 @media only screen and (max-width: 420px) {
   .row {
     flex-direction: column;
     margin-bottom: 0;
+    height: auto;
   }
   .columnImgs img {
     width: 100%;

@@ -15,7 +15,7 @@ function About({ setClickLang }) {
       }}
     >
       <div className="container">
-        <div className="title">
+        <div className="sectionTitle">
           <h1>
             <span className="firstLetter">B</span>
             iz haqimizda ...

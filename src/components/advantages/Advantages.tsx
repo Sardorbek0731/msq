@@ -25,7 +25,7 @@ enim`,
 
   return (
     <div>
-      <div className="title"> 
+      <div className="sectionTitle">
         <h1>
           <span className="firstLetter">A</span>fzalliklarimiz
         </h1>

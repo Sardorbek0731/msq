@@ -20,28 +20,26 @@ function Projects({ setClickLang }) {
       }}
     >
       <div className="container flex column">
-        <div className="title">
+        <div className="sectionTitle">
           <h1>
             <span className="firstLetter">L</span>oyihalar ...
           </h1>
         </div>
-        <div className="projectItems wf-100">
-          <div className="rowMain flex wf-100 justifyBetween">
-            <img src={project1} className="firstProject" alt="Project Images" />
+        <div className="rowMain flex justifyBetween">
+          <img src={project1} className="firstProject" alt="Project Images" />
 
-            <div className="columnImgs wf-100">
-              <div className="row wf-100 flex justifyBetween">
-                <img src={project2} alt="Project Images" />
-                <img src={project3} alt="Project Images" />
-              </div>
-              <div className="row wf-100 flex justifyBetween">
-                <img src={project5} alt="Project Images" />
-                <img src={project4} alt="Project Images" />
-              </div>
-              <div className="row wf-100 flex justifyBetween">
-                <img src={project7} alt="Project Images" />
-                <img src={project6} alt="Project Images" />
-              </div>
+          <div className="columnImgs flex column justifyBetween">
+            <div className="row wf-100 flex justifyBetween">
+              <img src={project2} alt="Project Images" />
+              <img src={project3} alt="Project Images" />
+            </div>
+            <div className="row wf-100 flex justifyBetween">
+              <img src={project5} alt="Project Images" />
+              <img src={project4} alt="Project Images" />
+            </div>
+            <div className="row wf-100 flex justifyBetween">
+              <img src={project7} alt="Project Images" />
+              <img src={project6} alt="Project Images" />
             </div>
           </div>
         </div>
