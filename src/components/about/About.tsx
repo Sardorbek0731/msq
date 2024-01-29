@@ -21,29 +21,19 @@ function About({ setClickLang }) {
             iz haqimizda ...
           </h1>
         </div>
-        <div className="aboutInfos flex">
+        <div className="aboutInfos flex justifyBetween">
           <div className="aboutUs_text flex column">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              possimus dolor pariatur facilis culpa voluptates eaque eveniet
-              voluptatum. possimus dolor pariatur facilis culpa voluptates eaque
-              eveniet voluptatum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              possimus dolor pariatur facilis culpa voluptates eaque eveniet
-              voluptatum, qui officia inventore vel earum expedita recusandae,
-              impedit quidem dolorem? Commodi fugit blanditiis
-              facilisvoluptatum, qui officia inventore vel earum expedita
-              recusandae, impedit quidem dolorem? Commodi fugit blanditiis
-              facilisvoluptatum, qui officia inventore vel earum expedita
-              recusandae, impedit quidem dolorem? Commodi fugit blanditiis
-              facilis
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              possimus dolor pariatur facilis culpa voluptates.
-            </p>
+            <div className="logo aboutLogo flex alignCenter">
+              <h3>Muhammad Savdo Qurilish MCHJ</h3>
+            </div>
+            <div className="director flex justifyBetween">
+              <h3>Direktor:</h3>
+              <h3>Olimov Azizbek</h3>
+            </div>
+            <div className="birthday flex justifyBetween">
+              <h3>Tashkil topgan sana:</h3>
+              <h3>2014-yil 6-dekabr</h3>
+            </div>
           </div>
           <div className="aboutUs_img flex">
             <img src={aboutImg} alt="About us image" />

@@ -1,0 +1,10 @@
+.rowMain {
+  align-items: flex-start;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+.row img:last-child {
+  margin-right: 0;
+}

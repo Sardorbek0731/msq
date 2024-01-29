@@ -1,23 +1,26 @@
-.aboutUs_text {
-  padding-right: 5rem;
+.about {
+  margin-top: 6rem;
 }
-
-.aboutUs_text {
-  justify-content: space-between;
-}
-
-.aboutUs_text p {
-  font-size: 1.05rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.aboutUs_img img {
-  width: 32rem;
-  height: auto;
-  border-radius: 0.6rem;
-  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.3);
-}
-
 .aboutUs_img {
   justify-content: flex-end;
+}
+.aboutLogo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.birthday {
+  margin-top: 0.4rem;
+}
+.director h3,
+.birthday h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Signika", sans-serif;
+}
+.director h3:first-child,
+.birthday h3:first-child {
+  color: rgba(0, 0, 0, 0.7);
+}
+.birthday h3:first-child {
+  margin-right: 10rem;
 }
