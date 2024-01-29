@@ -25,9 +25,11 @@ enim`,
 
   return (
     <div>
-      <h1 className="title">
-        <span className="firstLetter">A</span>fzalliklarimiz
-      </h1>
+      <div className="title"> 
+        <h1>
+          <span className="firstLetter">A</span>fzalliklarimiz
+        </h1>
+      </div>
       <div className="OurAdvantagesRow">
         {advantage.map((adv, index) => (
           <div className="IconBox" key={index}>
