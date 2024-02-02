@@ -1,25 +1,26 @@
 .about {
   margin-top: 6rem;
 }
-.aboutUs_img {
-  justify-content: flex-end;
-}
+
 .aboutLogo h3 {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
-.birthday {
-  margin: 0.4rem 0;
+
+.aboutItem {
+  margin: 0.25rem 0;
 }
-.finishedProject {
-  margin-bottom: 0.4rem;
+
+.aboutItem:last-child {
+  margin-bottom: 0;
 }
-.finishedProject h3:first-child,
-.addressAbout h3:first-child,
-.director h3:first-child,
-.birthday h3:first-child {
-  color: rgba(0, 0, 0, 0.7);
+
+.aboutItem h3:last-child {
+  color: rgba(0, 0, 0, 0.8);
 }
-.addressAbout h3:first-child {
-  margin-right: 5rem;
+
+.aboutUs_img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }

@@ -1,48 +1,5 @@
-.LandingContainer {
-  margin-top: 60px;
-}
-
-.HeaderWrap {
-  padding-left: 140px;
-  padding-top: 220px;
-  height: 64.5vh;
-  background: url("../../assets/img/humo-teksPNG.png") no-repeat;
-  background-size: contain;
-}
-
-.LandingInside {
-  padding: 50px 140px;
-  padding-bottom: 0px;
-  padding-top: 80px;
-  background-color: #151be0;
-}
-
-.HeaderTitle {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 112px !important;
-  font-family: "Playfair Display", serif !important;
-  -webkit-text-stroke: 1px #400ccc;
-  -webkit-text-fill-color: white;
-}
-
-.HeaderText {
-  color: #fff;
-  width: 45%;
-}
-
-.AboutSectionContainer {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .MuiSvgIcon-root {
   fill: #fff !important;
-}
-
-.MuiListItemIcon-root {
-  padding: 0;
 }
 
 .MuiGrid-container {
@@ -63,10 +20,6 @@
   color: #033568;
   padding-right: 10px;
   margin-top: 0;
-}
-
-.SliderProducts {
-  padding-bottom: 60px;
 }
 
 .ProductInfo {
@@ -149,7 +102,6 @@
 
 .OurAdvantagesRow {
   display: flex;
-  margin-bottom: 80px;
 }
 
 .ProductDescription {
@@ -219,12 +171,4 @@
     margin: 0;
     margin-left: 20px;
   }
-}
-
-.Checkmark {
-  color: green;
-}
-
-.Cancel {
-  color: red;
 }

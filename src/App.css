@@ -55,12 +55,11 @@ html {
 }
 
 /* Sections */
-.projects,
-.about {
-  padding-top: 3rem;
-}
+.about,
+.advantages,
 .projects {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 /* Title */
@@ -115,28 +114,19 @@ html {
 }
 
 /* About */
-.aboutUs_img img {
-  width: 36rem;
-  height: auto;
-  object-fit: contain;
+.aboutUs_img {
+  width: 45%;
+  justify-content: flex-end;
 }
 
 .aboutUs_text {
-  padding-right: 3rem;
+  width: 50%;
 }
 
-.aboutUs_text p {
-  font-size: 1.02rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.finishedProject h3,
-.addressAbout h3,
-.director h3,
-.birthday h3 {
-  font-size: 1.25rem;
+.aboutItem h3 {
+  font-size: 1.15rem;
   font-weight: 400;
-  font-family: "Signika", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Projects */
@@ -193,9 +183,6 @@ html {
   .logo h3 {
     display: none;
   }
-  .aboutUs_img img {
-    width: 28rem;
-  }
 }
 @media only screen and (max-width: 960px) {
   html {
@@ -212,16 +199,8 @@ html {
   .footerInfos {
     padding: 2.7rem 2.7rem 2.7rem 4rem;
   }
-  .aboutUs_text p {
-    font-size: 1rem;
-  }
-  .aboutUs_img img {
-    width: 27rem;
-  }
-  .finishedProject h3,
-  .addressAbout h3,
-  .director h3,
-  .birthday h3 {
+
+  .aboutItem h3 {
     font-size: 1.05rem;
   }
 }
@@ -234,13 +213,9 @@ html {
     align-items: center;
   }
   .aboutUs_text {
-    padding-right: 0;
-  }
-  .aboutUs_text {
-    padding: 0;
     width: 100%;
   }
-  .aboutUs_img img {
+  .aboutUs_img {
     width: 100%;
     margin-bottom: 3rem;
   }
@@ -328,22 +303,12 @@ html {
     font-size: 17px;
   }
 }
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1800px) {
   html {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
-@media only screen and (min-width: 1750px) {
-  html {
-    font-size: 18.5px;
-  }
-}
-@media only screen and (min-width: 1830px) {
-  html {
-    font-size: 19.3px;
-  }
-}
-@media only screen and (min-width: 1950px) {
+@media only screen and (min-width: 2000px) {
   html {
     font-size: 21px;
   }

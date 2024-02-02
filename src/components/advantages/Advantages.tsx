@@ -1,7 +1,10 @@
 import "./Advantages.css";
 import { AttachMoney, ThumbUpAlt, Timer } from "@mui/icons-material";
+import { useTranslation } from "react-i18next";
 
 const Advantages = () => {
+  const { t } = useTranslation();
+
   const advantage = [
     {
       icon: <ThumbUpAlt className="Icon" />,
@@ -24,22 +27,22 @@ enim`,
   ];
 
   return (
-    <div>
-      <div className="sectionTitle">
-        <h1>
-          <span className="firstLetter">A</span>fzalliklarimiz
-        </h1>
+    <section className="advantages">
+      <div className="container">
+        <div className="sectionTitle">
+          <h1>{t("section.advantageTitle")}</h1>
+        </div>
+        <div className="OurAdvantagesRow">
+          {advantage.map((adv, index) => (
+            <div className="IconBox" key={index}>
+              <div className="IconWrap">{adv.icon}</div>
+              <h4 className="title">{adv.title}</h4>
+              <p className="description">{adv.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="OurAdvantagesRow">
-        {advantage.map((adv, index) => (
-          <div className="IconBox" key={index}>
-            <div className="IconWrap">{adv.icon}</div>
-            <h4 className="title">{adv.title}</h4>
-            <p className="description">{adv.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 
