@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #90542d;
+  background-color: #12788f;
 }
 
 html {
@@ -130,6 +130,18 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Advantages */
+.advantageItem {
+  margin-right: 2.8rem;
+  padding: 1.4rem;
+}
+.advantageItem:last-child {
+  margin-right: 0;
+}
+.advantageItem h4 {
+  font-size: 1.7rem;
+}
+
 /* Projects */
 .columnImgs {
   height: auto;
@@ -187,12 +199,12 @@ html {
 }
 @media only screen and (max-width: 960px) {
   html {
-    font-size: 11.5px;
+    font-size: 11.3px;
   }
 }
 @media only screen and (max-width: 760px) {
   html {
-    font-size: 10px;
+    font-size: 10.7px;
   }
   .container {
     padding: 0 4rem;
@@ -280,6 +292,23 @@ html {
   .row {
     height: 14rem;
   }
+  .advantageRow {
+    flex-direction: column;
+  }
+  .advantageItem {
+    margin-right: 0;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .advantageItem:last-child {
+    margin-bottom: 0;
+  }
+  .advantageItem h4 {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 1.07rem;
+  }
 }
 @media only screen and (max-width: 420px) {
   .row {
@@ -296,6 +325,9 @@ html {
   }
   .nav ul li a {
     font-size: 0.95rem;
+  }
+  .logo img {
+    width: 3rem;
   }
 }
 

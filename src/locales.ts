@@ -27,6 +27,11 @@ export const resources = {
       director: {
         name: "Olimov Azizbek",
       },
+      advantageItems: {
+        titleFirst: "Yuqori sifat",
+        titleSecond: "Qulay narx",
+        titleThird: "Yuqori tezlik",
+      },
     },
   },
   ru: {
@@ -56,6 +61,11 @@ export const resources = {
       },
       director: {
         name: "Олимов Азизбек",
+      },
+      advantageItems: {
+        titleFirst: "Высокое качество",
+        titleSecond: "Доступная цена",
+        titleThird: "Высокоскоростной",
       },
     },
   },
