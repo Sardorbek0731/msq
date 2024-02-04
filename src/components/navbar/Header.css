@@ -17,15 +17,6 @@ header {
   color: #12788f;
 }
 
-.nav ul li {
-  list-style: none;
-  margin-right: 1.5rem;
-  position: relative;
-}
-.nav ul li:last-child {
-  margin-right: 0;
-}
-
 .nav ul li::before {
   content: "";
   position: absolute;
@@ -62,6 +53,13 @@ header {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.number svg {
+  color: black;
+  margin-right: 0.5rem;
+  width: 0.93rem;
+  height: 0.93rem;
+}
+
 .language_btn:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -72,9 +70,9 @@ header {
 .language_items {
   position: absolute;
   top: 200%;
-  left: 0;
+  right: 0;
   background-color: white;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   padding: 0.7rem;
   transition: opacity 0.2s, top 0.3s;
   border: 2px solid rgba(182, 182, 198, 0.2);
@@ -99,7 +97,7 @@ header {
 }
 .language_item.activeLang {
   background-color: rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(66, 63, 79, 0.24);
+  border: 1px solid rgba(66, 63, 79, 0.24);
 }
 
 .language_btn h1 {

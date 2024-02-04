@@ -83,6 +83,16 @@ html {
   height: auto;
   margin-right: 1rem;
 }
+
+.nav ul li {
+  list-style: none;
+  margin-right: 1.5rem;
+  position: relative;
+}
+.nav ul li:last-child {
+  margin-right: 0;
+}
+
 .nav ul li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
@@ -132,14 +142,14 @@ html {
 
 /* Advantages */
 .advantageItem {
-  margin-right: 2.8rem;
-  padding: 1.4rem;
+  margin-right: 3.2rem;
+  padding: 1.3rem;
 }
 .advantageItem:last-child {
   margin-right: 0;
 }
 .advantageItem h4 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 /* Projects */
@@ -221,6 +231,9 @@ html {
   .logo h3 {
     display: none;
   }
+  .number {
+    display: none;
+  }
   .aboutInfos {
     flex-direction: column-reverse;
     align-items: center;
@@ -258,10 +271,12 @@ html {
   .footer {
     flex-direction: column;
   }
+  .footerMap {
+    height: 26rem;
+  }
   .footerMap iframe {
     position: static;
     width: 100%;
-    height: 26rem;
   }
   .footerMap,
   .footerInfos {
@@ -280,9 +295,6 @@ html {
   }
 }
 @media only screen and (max-width: 500px) {
-  .number {
-    display: none;
-  }
   .language_item {
     padding: 0.4rem 1.8rem 0.4rem 0.6rem;
   }
@@ -311,6 +323,9 @@ html {
   }
 }
 @media only screen and (max-width: 420px) {
+  .container {
+    padding: 0 2.8rem;
+  }
   .row {
     flex-direction: column;
     margin-bottom: 0;
@@ -322,6 +337,9 @@ html {
   }
   .row:last-child img:last-child {
     margin-bottom: 0;
+  }
+  .nav ul li {
+    margin-right: 1rem;
   }
   .nav ul li a {
     font-size: 0.95rem;
