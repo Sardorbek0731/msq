@@ -1,3 +1,9 @@
+.columnImgs {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
 .firstProject,
 .projectImg {
   position: relative;
@@ -20,7 +26,11 @@
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
-  font-size: 1.1rem;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.2rem;
   color: white;
   z-index: 2;
   font-weight: 400;

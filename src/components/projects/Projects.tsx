@@ -9,11 +9,43 @@ import project4 from "../../assets/images/project-4.jpg";
 import project5 from "../../assets/images/project-5.jpg";
 import project6 from "../../assets/images/project-6.jpg";
 import project7 from "../../assets/images/project-7.jpg";
-
 import { useTranslation } from "react-i18next";
 
 function Projects({ setClickLang }) {
   const { t } = useTranslation();
+
+  interface IProject {
+    image: string;
+    title: string;
+  }
+
+  const projects: IProject[] = [
+    {
+      image: project2,
+      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+    },
+    {
+      image: project3,
+      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+    },
+    {
+      image: project4,
+      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+    },
+    {
+      image: project5,
+      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+    },
+    {
+      image: project6,
+      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+    },
+    {
+      image: project7,
+      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+    },
+  ];
+
   return (
     <section
       className="projects"
@@ -29,40 +61,18 @@ function Projects({ setClickLang }) {
         <div className="rowMain flex justifyBetween">
           <div className="firstProject">
             <img src={project1} alt="Project Images" />
-            <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi.</h2>
+            <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
           </div>
 
-          <div className="columnImgs flex column justifyBetween">
-            <div className="row wf-100 flex justifyBetween">
-              <div className="projectImg wf-100">
-                <img src={project2} alt="Project Images" />
-                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi.</h2>
-              </div>
-              <div className="projectImg wf-100">
-                <img src={project3} alt="Project Images" />
-                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
-              </div>
-            </div>
-            <div className="row wf-100 flex justifyBetween">
-              <div className="projectImg">
-                <img src={project5} alt="Project Images" />
-                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
-              </div>
-              <div className="projectImg">
-                <img src={project4} alt="Project Images" />
-                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
-              </div>
-            </div>
-            <div className="row wf-100 flex justifyBetween">
-              <div className="projectImg">
-                <img src={project7} alt="Project Images" />
-                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
-              </div>
-              <div className="projectImg">
-                <img src={project6} alt="Project Images" />
-                <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi.</h2>
-              </div>
-            </div>
+          <div className="columnImgs flex">
+            {projects.map((item: IProject, index: number) => {
+              return (
+                <div className="projectImg wf-100" key={index}>
+                  <img src={item.image} alt="Project Images" />
+                  <h2>{item.title}</h2>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
