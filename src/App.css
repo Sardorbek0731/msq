@@ -266,10 +266,10 @@ html {
 }
 @media only screen and (max-width: 525px) {
   .footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .footerMap {
-    height: 26rem;
+    height: 27rem;
   }
   .footerMap iframe {
     position: static;
