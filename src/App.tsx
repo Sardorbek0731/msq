@@ -3,7 +3,6 @@ import "./App.css";
 
 // Components
 import Header from "./components/navbar/Header";
-import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Advantages from "./components/advantages/Advantages";
 import Projects from "./components/projects/Projects";
@@ -17,7 +16,6 @@ function App() {
   return (
     <>
       <Header clickLang={clickLang} setClickLang={setClickLang} />
-      {/* <Home setClickLang={setClickLang} /> */}
       <About setClickLang={setClickLang} />
       <Advantages setClickLang={setClickLang} />
       <Projects setClickLang={setClickLang} />

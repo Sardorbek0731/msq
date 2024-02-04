@@ -6,7 +6,7 @@ import like from "../../assets/icons/like.png";
 import speed from "../../assets/icons/speed.png";
 import coin from "../../assets/icons/coin.webp";
 
-const Advantages = () => {
+const Advantages = ({ setClickLang }) => {
   const { t } = useTranslation();
 
   const advantage = [
@@ -30,7 +30,13 @@ enim`,
     },
   ];
   return (
-    <section className="advantages" id="advantages">
+    <section
+      className="advantages"
+      id="advantages"
+      onClick={() => {
+        setClickLang(false);
+      }}
+    >
       <div className="container">
         <div className="sectionTitle">
           <h1>{t("section.advantageTitle")}</h1>

@@ -9,6 +9,7 @@ import project4 from "../../assets/images/project-4.jpg";
 import project5 from "../../assets/images/project-5.jpg";
 import project6 from "../../assets/images/project-6.jpg";
 import project7 from "../../assets/images/project-7.jpg";
+
 import { useTranslation } from "react-i18next";
 
 function Projects({ setClickLang }) {
