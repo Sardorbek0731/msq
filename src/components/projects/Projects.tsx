@@ -67,7 +67,7 @@ function Projects({ setClickLang }) {
           <div className="columnImgs flex">
             {projects.map((item: IProject, index: number) => {
               return (
-                <div className="projectImg wf-100" key={index}>
+                <div className="projectImg" key={index}>
                   <img src={item.image} alt="Project Images" />
                   <h2>{item.title}</h2>
                 </div>
