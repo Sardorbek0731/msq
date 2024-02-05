@@ -4,6 +4,10 @@ import "./Header.css";
 // Images
 import logo from "../../assets/images/logo.png";
 
+// Icons
+import uz from "../../assets/icons/uz.png";
+import ru from "../../assets/icons/ru.png";
+
 // Hooks
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -65,6 +69,7 @@ function Header({ clickLang, setClickLang }) {
               setClickLang(!clickLang);
             }}
           >
+            <img src={langValue == "O'zbek" ? uz : ru} alt="Flag icon" />
             <h1>{langValue}</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +102,7 @@ function Header({ clickLang, setClickLang }) {
                   i18n.changeLanguage("uz");
                 }}
               >
+                <img src={uz} alt="Flag icon" />
                 O'zbek
               </div>
               <div
@@ -110,6 +116,7 @@ function Header({ clickLang, setClickLang }) {
                   i18n.changeLanguage("ru");
                 }}
               >
+                <img src={ru} alt="Flag icon" />
                 Русский
               </div>
             </div>

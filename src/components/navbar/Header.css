@@ -38,10 +38,10 @@ header {
 }
 
 .language_btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(108, 108, 135, 0.12);
 }
 .language_btn.clickedLangBtn {
-  border: 2px solid rgba(66, 63, 79, 0.1);
+  border: 1px solid rgba(108, 108, 135, 0.2);
 }
 
 .language_items {
@@ -52,7 +52,7 @@ header {
   border-radius: 0.4rem;
   padding: 0.7rem;
   transition: opacity 0.2s, top 0.3s;
-  border: 2px solid rgba(182, 182, 198, 0.2);
+  border: 1px solid rgba(182, 182, 198, 0.3);
   font-weight: 400;
   color: black;
   font-size: 0.93rem;
@@ -70,11 +70,11 @@ header {
   margin-bottom: 0;
 }
 .language_item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(108, 108, 135, 0.12);
 }
 .language_item.activeLang {
-  background-color: rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(66, 63, 79, 0.24);
+  background-color: rgba(108, 108, 135, 0.13);
+  border: 1px solid rgba(108, 108, 135, 0.2);
 }
 
 .language_btn h1 {
@@ -84,10 +84,15 @@ header {
   font-weight: 400;
   color: black;
   font-size: 0.93rem;
-  margin-right: 0.5rem;
-  padding-right: 0.5rem;
+  margin-right: 0.4rem;
+  padding-right: 0.4rem;
   height: 45%;
-  border-right: 2px solid rgba(0, 0, 0, 0.07);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.language_btn img {
+  width: 1.07rem;
+  margin-right: 0.4rem;
 }
 
 .language_btn svg {
