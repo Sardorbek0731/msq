@@ -37,29 +37,6 @@ header {
   color: #12788f;
 }
 
-.number {
-  background-color: rgba(0, 0, 0, 0.03);
-  padding: 0 0.9rem;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  font-size: 0.93rem;
-  transition: all 0.3s;
-  margin-right: 1.5rem;
-  height: 2.8rem;
-}
-.number:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.number svg {
-  color: black;
-  margin-right: 0.5rem;
-  width: 0.93rem;
-  height: 0.93rem;
-}
-
 .language_btn:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }

@@ -2,17 +2,13 @@ export const resources = {
   uz: {
     translation: {
       navbar: {
-        projects: "Loyihalar",
         about: "Biz haqimizda",
+        advantages: "Afzalliklar",
+        projects: "Loyihalar",
         contact: "Kontakt",
       },
       footer: {
         address: "Urganch shahar, Sanoatchilar ko'chasi, 1-yo'lak, 1A uy",
-      },
-      section: {
-        aboutTitle: "Biz haqimizda ...",
-        advantageTitle: "Afzalliklar ...",
-        projectTitle: "Loyihalar ...",
       },
       aboutSection: {
         director: "Direktor",
@@ -37,17 +33,13 @@ export const resources = {
   ru: {
     translation: {
       navbar: {
-        projects: "Проекты",
         about: "О нас",
+        advantages: "Преимущества",
+        projects: "Проекты",
         contact: "Контакт",
       },
       footer: {
         address: "Город Ургенч, улица Саноатчилар, 1-й проезд, дом 1а",
-      },
-      section: {
-        aboutTitle: "О нас ...",
-        advantageTitle: "Преимущества ...",
-        projectTitle: "Проекты ...",
       },
       aboutSection: {
         director: "Директор",

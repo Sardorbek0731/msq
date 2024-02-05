@@ -26,7 +26,7 @@ function Projects({ setClickLang }) {
     },
     {
       image: project3,
-      title: "Al-Xorazmiy majmuasidagi bolalar maydonchasi",
+      title: "Loyihadagi quyosh panellari joylashuvi",
     },
     {
       image: project4,
@@ -56,7 +56,7 @@ function Projects({ setClickLang }) {
     >
       <div className="container flex column">
         <div className="sectionTitle">
-          <h1>{t("section.projectTitle")}</h1>
+          <h1>{t("navbar.projects") + "..."}</h1>
         </div>
         <div className="rowMain flex justifyBetween">
           <div className="firstProject">

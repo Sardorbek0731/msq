@@ -39,7 +39,7 @@ enim`,
     >
       <div className="container">
         <div className="sectionTitle">
-          <h1>{t("section.advantageTitle")}</h1>
+          <h1>{t("navbar.advantages") + "..."}</h1>
         </div>
         <div className="advantageRow flex alignCenter justifyBetween">
           {advantage.map((adv, index) => (
