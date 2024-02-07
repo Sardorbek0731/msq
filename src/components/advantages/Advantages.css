@@ -17,15 +17,3 @@
   height: auto;
   margin-bottom: 1.2rem;
 }
-
-.advantageItem h4 {
-  color: #12788f;
-  margin-bottom: 1.2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 500;
-}
-
-.description {
-  text-align: center;
-  color: rgba(42, 41, 53, 0.75);
-}

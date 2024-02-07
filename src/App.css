@@ -116,7 +116,7 @@ html {
   border-radius: 0.4rem;
   cursor: pointer;
   transition: all 0.3s;
-  height: 2.9rem;
+  height: 2.85rem;
   padding: 0 0.7rem;
   border: 1px solid transparent;
 }
@@ -159,7 +159,7 @@ html {
 
 /* Advantages */
 .advantageItem {
-  margin-right: 3.2rem;
+  margin-right: 3.3rem;
   padding: 1.3rem;
 }
 .advantageItem:last-child {
@@ -167,6 +167,19 @@ html {
 }
 .advantageItem h4 {
   font-size: 1.6rem;
+}
+
+.advantageItem h4 {
+  color: #12788f;
+  font-size: 1.35rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.975rem;
+  text-align: center;
+  color: rgba(42, 41, 53, 0.75);
 }
 
 /* Projects */
@@ -335,7 +348,7 @@ html {
   }
 
   .sectionTitle h1 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
 
   .projectImg {
@@ -353,10 +366,10 @@ html {
     margin-bottom: 0;
   }
   .advantageItem h4 {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
   .description {
-    font-size: 1.175rem;
+    font-size: 1.15rem;
   }
 
   .columnImgs {
