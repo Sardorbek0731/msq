@@ -7,6 +7,7 @@ import logo from "../../assets/images/logo.png";
 // Icons
 import uz from "../../assets/icons/uz.png";
 import ru from "../../assets/icons/ru.png";
+import navBtn from "../../assets/icons/column-menu.png";
 
 // Hooks
 import { useState } from "react";
@@ -120,6 +121,10 @@ function Header({ clickLang, setClickLang }) {
                 Русский
               </div>
             </div>
+          </div>
+
+          <div className="columnNavbar_btn">
+            <img src={navBtn} alt="Column Menu Button" />
           </div>
         </nav>
       </div>

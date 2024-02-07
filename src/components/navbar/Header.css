@@ -49,7 +49,7 @@ header {
   top: 200%;
   right: 0;
   background-color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   padding: 0.7rem;
   transition: opacity 0.2s, top 0.3s;
   border: 1px solid rgba(182, 182, 198, 0.3);
@@ -84,8 +84,8 @@ header {
   font-weight: 400;
   color: black;
   font-size: 0.93rem;
-  margin-right: 0.4rem;
-  padding-right: 0.4rem;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
   height: 45%;
   border-right: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -103,4 +103,10 @@ header {
 
 #lang-arrow {
   transform: rotate(180deg);
+}
+
+
+/* Column Navbar */
+.columnNavbar_btn img {
+  width: 1.3rem;
 }
