@@ -108,10 +108,11 @@ header {
 /* Column Navbar */
 .columnNavbar_btn {
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   background-color: rgba(108, 108, 135, 0.08);
-  padding: 0 0.7rem;
-  height: 2.85rem;
+  height: 2.9rem;
+  width: 2.85rem;
   position: relative;
   z-index: 5;
   border-radius: 0.4rem;

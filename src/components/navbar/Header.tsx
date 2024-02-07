@@ -64,7 +64,12 @@ function Header({ clickLang, setClickLang }) {
           >
             {navbarLists.map((item: INavbar, index: number) => {
               return (
-                <li key={index}>
+                <li
+                  key={index}
+                  onClick={() => {
+                    setOpenNav(false);
+                  }}
+                >
                   <a href={"#" + item.href}>{item.title}</a>
                 </li>
               );
