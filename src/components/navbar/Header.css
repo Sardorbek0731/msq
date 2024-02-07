@@ -11,6 +11,11 @@ header {
 .logo {
   text-decoration: none;
 }
+.logo.fixed {
+  position: fixed;
+  left: 4rem;
+  z-index: 5;
+}
 .logo h3 {
   font-size: 1.05rem;
   font-weight: 500;
@@ -50,7 +55,7 @@ header {
   right: 0;
   background-color: white;
   border-radius: 0.5rem;
-  padding: 0.7rem;
+  padding: 0.6rem;
   transition: opacity 0.2s, top 0.3s;
   border: 1px solid rgba(182, 182, 198, 0.3);
   font-weight: 400;
@@ -105,8 +110,26 @@ header {
   transform: rotate(180deg);
 }
 
+.langAnd_navBtn.fixed {
+  position: fixed;
+  z-index: 5;
+  right: 4rem;
+}
 
 /* Column Navbar */
+.columnNavbar_btn {
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(108, 108, 135, 0.08);
+  padding: 0 0.7rem;
+  height: 2.9rem;
+  position: relative;
+  z-index: 5;
+  border-radius: 0.4rem;
+}
+.columnNavbar_btn:hover {
+  background-color: rgba(108, 108, 135, 0.12);
+}
 .columnNavbar_btn img {
   width: 1.3rem;
 }
