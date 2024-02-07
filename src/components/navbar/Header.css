@@ -11,11 +11,6 @@ header {
 .logo {
   text-decoration: none;
 }
-.logo.fixed {
-  position: fixed;
-  left: 4rem;
-  z-index: 5;
-}
 .logo h3 {
   font-size: 1.05rem;
   font-weight: 500;
@@ -108,12 +103,6 @@ header {
 
 #lang-arrow {
   transform: rotate(180deg);
-}
-
-.langAnd_navBtn.fixed {
-  position: fixed;
-  z-index: 5;
-  right: 4rem;
 }
 
 /* Column Navbar */

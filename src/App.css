@@ -87,6 +87,12 @@ html {
   margin-right: 1rem;
 }
 
+.logo.fixed {
+  position: fixed;
+  left: 4rem;
+  z-index: 5;
+}
+
 .nav ul li {
   list-style: none;
   margin-right: 1.8rem;
@@ -126,6 +132,12 @@ html {
   margin-bottom: 0.6rem;
   background-color: rgba(108, 108, 135, 0.07);
   border: 2px solid transparent;
+}
+
+.langAnd_navBtn.fixed {
+  position: fixed;
+  z-index: 5;
+  right: 4rem;
 }
 
 /* About */
@@ -205,18 +217,10 @@ html {
 }
 @media only screen and (max-width: 980px) {
   html {
-    font-size: 11px;
-  }
-}
-@media only screen and (max-width: 960px) {
-  html {
-    font-size: 11.3px;
+    font-size: 11.2px;
   }
 }
 @media only screen and (max-width: 760px) {
-  html {
-    font-size: 10.7px;
-  }
   .container {
     padding: 0 4rem;
   }
@@ -299,8 +303,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(9px);
     right: -100%;
     top: 0;
     transition: all 0.5s;
@@ -320,7 +324,7 @@ html {
     margin-bottom: 0;
   }
   .nav ul li a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .language_item {
@@ -350,14 +354,6 @@ html {
   .description {
     font-size: 1.2rem;
   }
-}
-@media only screen and (max-width: 420px) {
-  .container {
-    padding: 0 2.8rem;
-  }
-  .logo img {
-    width: 3rem;
-  }
 
   .columnImgs {
     flex-direction: column;
@@ -365,6 +361,20 @@ html {
   .projectImg {
     width: 100%;
     height: auto;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .nav ul,
+  .container {
+    padding: 0 3rem;
+  }
+
+  .langAnd_navBtn.fixed {
+    right: 3rem;
+  }
+
+  .logo.fixed {
+    left: 3rem;
   }
 }
 
