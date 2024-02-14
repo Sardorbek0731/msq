@@ -7,6 +7,8 @@
 .firstProject,
 .projectImg {
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .firstProject::after,
@@ -19,6 +21,13 @@
   bottom: 0;
   left: 0;
   right: 0;
+  transition: all 0.3s;
+}
+
+.firstProject:hover::after,
+.projectImg:hover::after {
+  height: 130%;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .firstProject h2,
@@ -27,9 +36,96 @@
   bottom: 1.2rem;
   left: 1.2rem;
   right: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   z-index: 1;
   font-weight: 400;
-  font-family: "Signika", sans-serif;
+}
+
+.fullscreenBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.fullscreenBtn img {
+  width: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+
+.firstProject:hover .fullscreenBtn img,
+.projectImg:hover .fullscreenBtn img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* Fullscreen Images */
+.fullscreenImages {
+  width: 700%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 5;
+}
+.fullscreenImage {
+  width: 100%;
+}
+.fullscreenImage img {
+  width: auto;
+  height: 85%;
+  object-fit: cover;
+}
+
+.closeFullscreen {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  background-color: rgb(255, 0, 0);
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 6;
+}
+.closeFullscreen img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.closeFullscreen:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.sideBtn {
+  position: fixed;
+  z-index: 6;
+  width: 3.1rem;
+  height: 3.1rem;
+  background-color: rgba(155, 158, 178, 0.15);
+  border-radius: 50%;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.sideBtn:hover {
+  background-color: rgba(155, 158, 178, 0.22);
+}
+
+.leftBtn {
+  left: 3rem;
+  padding-right: 0.151rem;
+}
+.rightBtn {
+  right: 3rem;
+  padding-left: 0.1rem;
+}
+.sideBtn img {
+  width: 2rem;
+  height: 2rem;
 }

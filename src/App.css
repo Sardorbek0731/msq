@@ -16,6 +16,8 @@
 }
 
 html {
+  width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
@@ -195,12 +197,19 @@ html {
 .projectImg {
   width: 47.5%;
   height: 30.5%;
+  overflow: hidden;
 }
 
 .rowMain img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.3s;
+}
+
+.firstProject:hover img,
+.projectImg:hover img {
+  transform: scale(1.1);
 }
 
 /* Footer */
