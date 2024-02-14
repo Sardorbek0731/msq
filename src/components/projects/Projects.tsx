@@ -9,11 +9,14 @@ import project4 from "../../assets/images/project-4.jpg";
 import project5 from "../../assets/images/project-5.jpg";
 import project6 from "../../assets/images/project-6.jpg";
 import project7 from "../../assets/images/project-7.jpg";
-import fullscreen from "../../assets/icons/fullscreen.png";
+import fullscreenBtn from "../../assets/icons/fullscreen.png";
 import close from "../../assets/icons/close-white.png";
 import left from "../../assets/icons/left.png";
 import right from "../../assets/icons/right.png";
 import { useTranslation } from "react-i18next";
+
+// Hooks
+import { useState } from "react";
 
 function Projects({ setClickLang }) {
   const { t } = useTranslation();
@@ -50,6 +53,9 @@ function Projects({ setClickLang }) {
     },
   ];
 
+  const [fullscreen, setFullscreen] = useState<boolean>(false);
+  const [imgIndex, setImgIndex] = useState<number>(0);
+
   return (
     <section
       className="projects"
@@ -64,23 +70,34 @@ function Projects({ setClickLang }) {
         </div>
 
         <div className="rowMain flex justifyBetween">
-          <div className="firstProject">
+          <div
+            className="firstProject"
+            onClick={() => {
+              setFullscreen(true);
+            }}
+          >
             <img src={project1} alt="Project Images" />
             <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
             <div className="fullscreenBtn">
-              <img src={fullscreen} alt="FullScreen Button" />
+              <img src={fullscreenBtn} alt="FullScreen Button" />
             </div>
           </div>
 
           <div className="columnImgs flex">
             {projects.map((item: IProject, index: number) => {
               return (
-                <div className="projectImg" key={index}>
+                <div
+                  className="projectImg"
+                  key={index}
+                  onClick={() => {
+                    setFullscreen(true);
+                  }}
+                >
                   <img src={item.image} alt="Project Images" />
                   <h2>{item.title}</h2>
 
                   <div className="fullscreenBtn">
-                    <img src={fullscreen} alt="FullScreen Button" />
+                    <img src={fullscreenBtn} alt="FullScreen Button" />
                   </div>
                 </div>
               );
@@ -88,7 +105,14 @@ function Projects({ setClickLang }) {
           </div>
         </div>
 
-        <div className="fullscreenImages flex justifyBetween">
+        <div
+          className={
+            fullscreen
+              ? "fullscreenImages flex justifyBetween"
+              : "fullscreenImages flex justifyBetween hidden"
+          }
+          style={{ marginLeft: "-" + 100 * imgIndex + "%" }}
+        >
           <div className="fullscreenImage flex alignCenter justifyCenter">
             <img src={project1} alt="Project Images" />
           </div>
@@ -104,16 +128,37 @@ function Projects({ setClickLang }) {
           })}
         </div>
 
-        <div className="fullscreenButtons">
-          <div className="closeFullscreen flex alignCenter justifyCenter">
+        <div
+          className={
+            fullscreen ? "fullscreenButtons" : "fullscreenButtons hidden"
+          }
+        >
+          <div
+            className="closeFullscreen flex alignCenter justifyCenter"
+            onClick={() => {
+              setFullscreen(false);
+            }}
+          >
             <img src={close} alt="Close Fullscreen" />
           </div>
-          <div className="leftBtn sideBtn flex alignCenter justifyCenter">
+          <button
+            className="leftBtn sideBtn flex alignCenter justifyCenter"
+            disabled={imgIndex > 0 ? false : true}
+            onClick={() => {
+              setImgIndex(imgIndex - 1);
+            }}
+          >
             <img src={left} alt="Left Fullscreen" />
-          </div>
-          <div className="rightBtn sideBtn flex alignCenter justifyCenter">
+          </button>
+          <button
+            className="rightBtn sideBtn flex alignCenter justifyCenter"
+            disabled={imgIndex < projects.length ? false : true}
+            onClick={() => {
+              setImgIndex(imgIndex + 1);
+            }}
+          >
             <img src={right} alt="Right Fullscreen" />
-          </div>
+          </button>
         </div>
       </div>
     </section>

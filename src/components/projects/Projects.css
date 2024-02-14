@@ -71,14 +71,16 @@
   background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(6px);
   z-index: 5;
+  transition: all 0.5s;
 }
 .fullscreenImage {
   width: 100%;
 }
 .fullscreenImage img {
   width: auto;
-  height: 85%;
+  height: 87%;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .closeFullscreen {
@@ -112,9 +114,18 @@
   cursor: pointer;
   transform: translateY(-50%);
   transition: all 0.3s;
+  border: none;
 }
 .sideBtn:hover {
   background-color: rgba(155, 158, 178, 0.22);
+}
+
+.sideBtn:disabled {
+  opacity: 0.2;
+}
+.sideBtn:disabled:hover {
+  background-color: rgba(155, 158, 178, 0.15);
+  cursor: not-allowed;
 }
 
 .leftBtn {
