@@ -74,6 +74,7 @@ function Projects({ setClickLang }) {
             className="firstProject"
             onClick={() => {
               setFullscreen(true);
+              setImgIndex(0);
             }}
           >
             <img src={project1} alt="Project Images" />
@@ -91,6 +92,7 @@ function Projects({ setClickLang }) {
                   key={index}
                   onClick={() => {
                     setFullscreen(true);
+                    setImgIndex(index + 1);
                   }}
                 >
                   <img src={item.image} alt="Project Images" />
@@ -113,16 +115,18 @@ function Projects({ setClickLang }) {
           }
           style={{ marginLeft: "-" + 100 * imgIndex + "%" }}
         >
-          <div className="fullscreenImage flex alignCenter justifyCenter">
+          <div className="fullscreenImage flex column alignCenter justifyCenter">
             <img src={project1} alt="Project Images" />
+            <h2>Al-Xorazmiy majmuasidagi bolalar maydonchasi</h2>
           </div>
           {projects.map((item: IProject, index: number) => {
             return (
               <div
-                className="fullscreenImage flex alignCenter justifyCenter"
+                className="fullscreenImage flex column alignCenter justifyCenter"
                 key={index}
               >
                 <img src={item.image} alt="Project Images" />
+                <h2>{item.title}</h2>
               </div>
             );
           })}
